@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>by bradost  - Exemple</title>
+  <link rel="stylesheet" href="style.css">
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">by bradost</div>
+      <ul class="nav-links">
+        <li><a href="#services">Services</a></li>
+        <li><a href="#about">À propos</a></li>
+        <li><a href="#gallery">Galerie</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><button class="btn primary">Prendre RDV</button></li>
+      </ul>
+      <div class="menu-toggle">&#9776;</div>
+    </nav>
+    
+  <img src="logo.png" alt="Logo du salon" class="logo-circle">
+</header>
+
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <h1>Bienvenue chez by bradost</h1>
+    
+    <p>Votre salon de coiffure haut de gamme à swisse </p>
+    <button class="btn secondary">Découvrir nos services</button>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="services">
+    <h2>Nos Prestations</h2>
+    <div class="service-card">
+      <h3>Balayage Signature</h3>
+      <p>3h • 250 €</p>
+      <button class="btn secondary">Choisir</button>
+    </div>
+    <div class="service-card">
+      <h3>Refresh Balayage</h3>
+      <p>2h 15min • 190 €</p>
+      <button class="btn secondary">Choisir</button>
+    </div>
+    <div class="service-card">
+      <h3>Coloration Racine</h3>
+      <p>2h 15min • 119 €</p>
+      <button class="btn secondary">Choisir</button>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="about">
+    <h2>À propos</h2>
+    <p>Bienvenue dans notre salon de coiffure pour hommes, un espace moderne et convivial dédié à votre style.
+Nous proposons des coupes tendance, des soins de barbe et des prestations adaptées à chaque personnalité. Notre équipe de coiffeurs expérimentés met son savoir-faire au service de votre image, en vous garantissant un look soigné et élégant. Ici, chaque détail compte pour vous offrir une expérience unique, alliant confort, qualité et confiance</p>
+  </section>
+
+  <!-- GALERIE -->
+  <section id="gallery" class="gallery">
+    <h2>GALERIE </h2>
+    <div class="gallery-grid">
+       <img src="photo1.jpg" alt="Salon 2">
+     
+      <img src="photo3.jpg" alt="Salon 3">
+      <img src="photo4.png" alt="Salon 4">
+       <img src="photo 2.jpg" alt="Salon 2">
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="contact">
+    <h2>Contact & Localisation</h2>
+    <p>📍 rue de paris</p>
+    <p>📞 +33 ********</p>
+    <div class="map">
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2624.5283909288196!2d2.3430761156747534!3d48.86340307928857!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671eac59df2b3%3A0x3b7fdf9a7f0d847d!2sRue%20Fran%C3%A7aise%2C%2075001%20Paris!5e0!3m2!1sfr!2sfr!4v1632573029380!5m2!1sfr!2sfr" width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 BY BRADOST COIFFURE - Tous droits réservés</p>
+  </footer>
+
+  <script>
+    // Menu responsive
+    const toggle = document.querySelector('.menu-toggle');
+    const navLinks = document.querySelector('.nav-links');
+    toggle.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+    });
+  </script>
+</body>
+</html>
